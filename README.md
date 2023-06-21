@@ -5,7 +5,7 @@
 
 ### Firstly, the insertion of the data takes place using the [**loading_data.cql**](https://github.com/christakakis/cypher_neo4j_queries/blob/main/loading_data.cql) file.
 
-### Then, retrieval queries are written using Cypher-Neo4j in order to extract useful information.
+### Then, retrieval queries are written using Cypher-Neo4j in order to extract useful information using the **[queries.cql](https://github.com/christakakis/cypher_neo4j_queries/blob/main/queries.cql)** file.
 
   
 This repository was initially created to store my personal python codes but also be available to others trying to build or understand something similar. The codes contained in this repo are made specifically for a Network Analysis and Web Mining course of my MSc program.
