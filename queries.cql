@@ -17,9 +17,9 @@ WHERE NumberOfBooks >= 3
 RETURN u.name AS Name, u.surname AS Surname, NumberOfBooks
 ORDER BY NumberOfBooks DESC
 
-//3
-//Books not borrowed and not rated by 
-//anyone. (titles and types of books)
+/*3
+Books not borrowed and not rated by 
+anyone. (titles and types of books)*/
 
 MATCH (b:Book)-[:GENRE_OF]->(g:Genre)
 WHERE NOT EXISTS((b)<-[:BORROWED]-()) AND NOT EXISTS((b)<-[:RATED]-())
