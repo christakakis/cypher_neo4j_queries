@@ -6,10 +6,10 @@ MATCH (u:User)-[r:RATED]->(b:Book)-[:GENRE_OF]->(g:Genre)
 WHERE g.genre IN ['classic', 'fantasy'] AND r.rank >= 4
 RETURN u.name AS Name, u.surname AS Surname, b.title AS BookTitle, r.rank AS Rating
 
-//2
-//Users who have borrowed at least three different 
-//books sorted in descending order by the books 
-//borrowed (user's full name, number of books)
+/*2
+Users who have borrowed at least three different 
+books sorted in descending order by the books 
+borrowed (user's full name, number of books)*/
 
 MATCH (u:User)-[:BORROWED]->(b:Book)
 WITH u, COUNT(DISTINCT b) AS NumberOfBooks
