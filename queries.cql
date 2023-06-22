@@ -84,7 +84,7 @@ number of users who have borrowed them.
   
 MATCH (u:User)-[:BORROWED]->(b:Book)-[:GENRE_OF]->(g:Genre)
 WITH b, COUNT(DISTINCT g) AS numberOfGenres, COLLECT(DISTINCT u) AS users
-WHERE numberOfGenres >= 3
+WHERE numberOfGenres >= 2
 RETURN b.title AS BookTitle, SIZE(users) AS NumberOfUsersBorrowed
 
 /*10
