@@ -78,7 +78,7 @@ ORDER BY SharedBooks DESC
 LIMIT 1
 
 /*9
-For books that have more than 3 items, the 
+For books that have more than 2 items, the 
 number of users who have borrowed them. 
 (title, number of users)*/
   
